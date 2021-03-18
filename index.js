@@ -21,7 +21,7 @@ io.on("connection", (socket) => {
     console.log("in joinroom");
     const user = userJoin(socket.id, username);
     socket.join(user.room);
-    socket.emit("message", formatMessage(admin, "Welcome to ChitChat"));
+    socket.emit("message", formatMessage(admin, "Welcome to Accord!"));
 
     socket.broadcast.emit(
       "message",
@@ -36,7 +36,7 @@ io.on("connection", (socket) => {
     const user = userLeave(socket.id);
 
     if(user) {
-      io.emit("message", formatMessage(admin, user.username + "has left the chat!"));
+      io.emit("message", formatMessage(admin, user.username + " has left the chat!"));
       io.emit('users', getUsers());
     }
     
