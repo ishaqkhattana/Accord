@@ -1,0 +1,19 @@
+{
+  "name": "dclab03",
+  "version": "1.0.0",
+  "description": "chat room with private messaging",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "socket.io": "^4.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Mian Muhammad Ishaq Khattana",
+  "license": "ISC"
+}
