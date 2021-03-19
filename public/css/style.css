@@ -182,6 +182,11 @@ input:focus {
   overflow-y: auto;
 }
 
+li:hover{
+  cursor:pointer;
+  max-width: 100%;
+}
+
 .chat-messages .message {
   padding: 10px;
   margin-bottom: 15px;
