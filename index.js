@@ -60,6 +60,8 @@ io.on("connection", (socket) => {
 
 const PORT = 3000 || process.env.PORT;
 
-server.listen(PORT, () => {
-  console.log("Server running on port 3000!");
+var server_port = process.env.YOUR_PORT || process.env.PORT || 80;
+var server_host = process.env.YOUR_HOST || '0.0.0.0';
+server.listen(server_port, server_host, function() {
+    console.log('Listening on port %d', server_port);
 });
